@@ -11,7 +11,7 @@ class Post(models.Model):
     published_at = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    def __str__():
-        return self.title
+    def __str__(self):
+        return f"{self.title}"
     class Meta:
         ordering = ['-published_at']
