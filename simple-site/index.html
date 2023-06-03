@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+   <script>
+        let row = document.createElement('div')
+        row.className = 'row container-field'
+        let col1 = document.createElement("div")
+        col1.className = "col"
+        let col2 = document.createElement("div")
+        col2.className = "col"
+        array = [
+            "https://i.pinimg.com/564x/02/0c/96/020c9676ab4ba67d12d81ec898925224.jpg",
+            "https://i.pinimg.com/564x/f8/de/aa/f8deaacde244019c74559554a1bcb287.jpg",
+            "https://i.pinimg.com/564x/f8/de/aa/f8deaacde244019c74559554a1bcb287.jpg",
+            "https://i.pinimg.com/564x/f8/de/aa/f8deaacde244019c74559554a1bcb287.jpg",
+            "https://i.pinimg.com/564x/f8/de/aa/f8deaacde244019c74559554a1bcb287.jpg",
+            "https://i.pinimg.com/564x/f8/de/aa/f8deaacde244019c74559554a1bcb287.jpg",
+            "https://i.pinimg.com/564x/f8/de/aa/f8deaacde244019c74559554a1bcb287.jpg",
+            "https://i.pinimg.com/564x/f8/de/aa/f8deaacde244019c74559554a1bcb287.jpg"
+        ]
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            let el = document.createElement('img');
+            el.src = element;
+            el.width = el.height
+            if(index % 2 === 0){
+                col1.append(el)
+            } 
+            else{
+                col2.append(el)
+            }
+        }
+        row.append(col1)
+        row.append(col2)
+        document.body.append(row)
+
+   </script>
+</body>
+</html>

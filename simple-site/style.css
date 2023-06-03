@@ -1,0 +1,27 @@
+.nav-link a{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+.nav{
+    background-color: black;
+}
+
+.post img{
+    border-radius: 75px;
+    margin-bottom: 50px;
+}
+
+.post{
+    margin: 10px;
+}
+body{
+    margin: 0;   
+}
+
+.loader{
+    width: 100%;
+    flex: auto;
+    justify-content: center;
+}
